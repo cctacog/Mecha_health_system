@@ -1,0 +1,38 @@
+* C:\Users\gasop\Documents\sdsu\Mechatrnics\cap_water_sensor\Mecha_health_system\LTSpice test files\multi_cap_at_once_test.asc
+V1 N003 0 3.3
+C4 0 0 3.72
+S4 N001 0 Vs4 0 SW_1
+V2 Vs4 0 PULSE(0 1 5 0 0 15)
+S1 N001 N002 Vs1 0 SW_1
+S2 N001 0 Vs2 0 SW_1
+S3 N001 0 Vs3 0 SW_1
+C1 N002 0 3.72
+C2 0 0 3.72
+C3 0 0 3.72
+V3 Vs3 0 PULSE(0 1 6 0 0 14)
+V4 Vs2 0 PULSE(0 1 7 0 0 13)
+V5 Vs1 0 PULSE(0 1 8 0 0 12)
+R1 N002 0 1k
+D1 N002 0 1N4007
+C5 0 0 3.72
+C6 P001 0 3.72
+C7 P002 0 3.72
+C8 0 0 3.72
+S5 N001 0 Vs5 0 SW_1
+S6 N001 0 Vs8 0 SW_1
+S7 N001 P001 Vs6 0 SW_1
+S8 N001 P002 Vs7 0 SW_1
+V6 Vs8 0 PULSE(0 1 9 0 0 11)
+V7 Vs7 0 PULSE(0 1 10 0 0 10)
+V8 Vs6 0 PULSE(0 1 11 0 0 9)
+V9 Vs5 0 PULSE(0 1 12 0 0 8)
+R2 N003 N001 400m
+.model D D
+.lib C:\Users\gasop\AppData\Local\LTspice\lib\cmp\standard.dio
+.Model SW_1 SW()
+.tran 0 100 0 1
+* The first of the capacitor to touch the outer lining\nwith the voltage will send voltage thorugh
+* Simulating the switch as a water detection
+* Capacitor value \n= Area * dielectric / distance-between-plates \n= (0.001)^2 * 4.5 / 0.127m \n~= 3.5cF
+.backanno
+.end

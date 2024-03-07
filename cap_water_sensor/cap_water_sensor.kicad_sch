@@ -3929,7 +3929,7 @@
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 004a387a-1e5d-49d4-a885-7745a2d0bb6a)
   )
-  (text_box "Equation: C [capacitor] = A [area] x z [dielectric] / d [distance between plates]\nJCL dielectric for oridinary PCB product: z = 4.5 Farad/meter\nDistance between layers in JCL ordinary PBC product: d = 0.127 milimeters\nOptimized area for capacitor [length^{2} = A]: length = 3 centimeters\nFinal capacitor value: (0.03)^{2} x 4.5 / 0.127 x (10)^{-3} ~= 32 centifarad\n\n"
+  (text_box "Equation: C [capacitor] = A [area] x z [dielectric] / d [distance between plates]\nJCL dielectric for oridinary PCB product: z = 4.5 Farad/meter\nDistance between layers in JCL ordinary PBC product: d = 0.127 milimeters\nOptimized area for capacitor [length^{2} = A]: length = 1 milimeters\nFinal capacitor value: (0.001)^{2} x 4.5 / 0.127 x (10)^{-3} ~= 3.5 centifarad\n\n"
     (at 15.24 15.24 0) (size 68.58 19.05)
     (stroke (width 0) (type default))
     (fill (type none))
