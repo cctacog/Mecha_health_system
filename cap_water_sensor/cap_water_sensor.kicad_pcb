@@ -21076,7 +21076,7 @@
   (gr_text "Health System :)\nBy Sophia Garcia \nVersion I 03/04" (at 180.55 129.16) (layer "B.SilkS") (tstamp 38d27afc-69cb-472c-a8c6-0869fd27683d)
     (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom mirror))
   )
-  (gr_text "...it ain't got no gas in it" (at 158.3297 128.6114) (layer "B.SilkS") (tstamp f6301bee-b392-4c78-9bb1-3e552517c7a2)
+  (gr_text "...it ain't got no gas in it" (at 77.9056 94.8635 90) (layer "B.SilkS") (tstamp f6301bee-b392-4c78-9bb1-3e552517c7a2)
     (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom mirror))
   )
   (gr_text "I know what's wrong with it...\n" (at 77.9056 128.9472 90) (layer "F.SilkS") (tstamp 6d7ee493-5004-4a4e-8f9b-05e58aa076ab)
